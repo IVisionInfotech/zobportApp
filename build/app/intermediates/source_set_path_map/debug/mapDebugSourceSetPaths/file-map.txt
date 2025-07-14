@@ -1,34 +1,50 @@
-com.example.gotilo_job.app-fragment-1.7.1-0 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\17a9986953711e3ac051ae7deb3e8cb4\transformed\fragment-1.7.1\res
-com.example.gotilo_job.app-jetified-lifecycle-livedata-core-ktx-2.7.0-1 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\1f4d33f9ac1ff5e475eaf049f688e453\transformed\jetified-lifecycle-livedata-core-ktx-2.7.0\res
-com.example.gotilo_job.app-lifecycle-runtime-2.7.0-2 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\2294eefb534abc2045535b7af6255a48\transformed\lifecycle-runtime-2.7.0\res
-com.example.gotilo_job.app-jetified-savedstate-1.2.1-3 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\2b319ad35a4b6005bbfc69e621abc030\transformed\jetified-savedstate-1.2.1\res
-com.example.gotilo_job.app-lifecycle-livedata-core-2.7.0-4 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\30eeb90e513ca57c8c987dedaa9b6e63\transformed\lifecycle-livedata-core-2.7.0\res
-com.example.gotilo_job.app-jetified-annotation-experimental-1.4.0-5 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\321efa5c88d14288289767b3e2023ee8\transformed\jetified-annotation-experimental-1.4.0\res
-com.example.gotilo_job.app-jetified-window-java-1.2.0-6 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\5051cd0fd77d78968f6e04af0c3ca877\transformed\jetified-window-java-1.2.0\res
-com.example.gotilo_job.app-jetified-lifecycle-viewmodel-savedstate-2.7.0-7 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\57953d75b3cf5d7b94c973ace1e8022e\transformed\jetified-lifecycle-viewmodel-savedstate-2.7.0\res
-com.example.gotilo_job.app-jetified-profileinstaller-1.3.1-8 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\5bc56cc5b7ffd8cc90dd98ad06096d57\transformed\jetified-profileinstaller-1.3.1\res
-com.example.gotilo_job.app-jetified-lifecycle-process-2.7.0-9 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\5db26ab3c20b74cda61748dc3fbb729d\transformed\jetified-lifecycle-process-2.7.0\res
-com.example.gotilo_job.app-jetified-tracing-1.2.0-10 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\63784bb9bce35dfb3f1d34f8a0964243\transformed\jetified-tracing-1.2.0\res
-com.example.gotilo_job.app-jetified-startup-runtime-1.1.1-11 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\65ef756bb1711d8270ed5f8655e8502f\transformed\jetified-startup-runtime-1.1.1\res
-com.example.gotilo_job.app-jetified-core-1.0.0-12 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\6acfafc9039e2b6412036bdba204f456\transformed\jetified-core-1.0.0\res
-com.example.gotilo_job.app-lifecycle-viewmodel-2.7.0-13 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\93e18f6a5e59181863e718859ea25b4d\transformed\lifecycle-viewmodel-2.7.0\res
-com.example.gotilo_job.app-jetified-activity-1.9.3-14 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\941d490262e3d230616b5a2194a795d5\transformed\jetified-activity-1.9.3\res
-com.example.gotilo_job.app-jetified-core-ktx-1.13.1-15 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\a3908eb8ee0fdf37181339d64be30b18\transformed\jetified-core-ktx-1.13.1\res
-com.example.gotilo_job.app-core-1.13.1-16 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\abc854be44e9fdbce674543c7375e9a7\transformed\core-1.13.1\res
-com.example.gotilo_job.app-jetified-window-1.2.0-17 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\ad61718f9b81ae8ae66dd79e2d475697\transformed\jetified-window-1.2.0\res
-com.example.gotilo_job.app-lifecycle-livedata-2.7.0-18 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\c17430fc06c722918f27a04e6982930d\transformed\lifecycle-livedata-2.7.0\res
-com.example.gotilo_job.app-core-runtime-2.2.0-19 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\dfb80a893a9e49105ccf81a316fc086f\transformed\core-runtime-2.2.0\res
-com.example.gotilo_job.app-debug-20 E:\Harshil Flutter Project\gotilo_job\android\app\src\debug\res
-com.example.gotilo_job.app-main-21 E:\Harshil Flutter Project\gotilo_job\android\app\src\main\res
-com.example.gotilo_job.app-pngs-22 E:\Harshil Flutter Project\gotilo_job\build\app\generated\res\pngs\debug
-com.example.gotilo_job.app-resValues-23 E:\Harshil Flutter Project\gotilo_job\build\app\generated\res\resValues\debug
-com.example.gotilo_job.app-packageDebugResources-24 E:\Harshil Flutter Project\gotilo_job\build\app\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.example.gotilo_job.app-packageDebugResources-25 E:\Harshil Flutter Project\gotilo_job\build\app\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.example.gotilo_job.app-debug-26 E:\Harshil Flutter Project\gotilo_job\build\app\intermediates\merged_res\debug\mergeDebugResources
-com.example.gotilo_job.app-debug-27 E:\Harshil Flutter Project\gotilo_job\build\connectivity_plus\intermediates\packaged_res\debug\packageDebugResources
-com.example.gotilo_job.app-debug-28 E:\Harshil Flutter Project\gotilo_job\build\file_picker\intermediates\packaged_res\debug\packageDebugResources
-com.example.gotilo_job.app-debug-29 E:\Harshil Flutter Project\gotilo_job\build\flutter_plugin_android_lifecycle\intermediates\packaged_res\debug\packageDebugResources
-com.example.gotilo_job.app-debug-30 E:\Harshil Flutter Project\gotilo_job\build\fluttertoast\intermediates\packaged_res\debug\packageDebugResources
-com.example.gotilo_job.app-debug-31 E:\Harshil Flutter Project\gotilo_job\build\image_picker_android\intermediates\packaged_res\debug\packageDebugResources
-com.example.gotilo_job.app-debug-32 E:\Harshil Flutter Project\gotilo_job\build\path_provider_android\intermediates\packaged_res\debug\packageDebugResources
-com.example.gotilo_job.app-debug-33 E:\Harshil Flutter Project\gotilo_job\build\permission_handler_android\intermediates\packaged_res\debug\packageDebugResources
+com.example.gotilo_job.app-transition-1.4.1-0 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\00c6410f7a1e6455b8da8804dfb3f23b\transformed\transition-1.4.1\res
+com.example.gotilo_job.app-fragment-1.7.1-1 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\17a9986953711e3ac051ae7deb3e8cb4\transformed\fragment-1.7.1\res
+com.example.gotilo_job.app-jetified-lifecycle-livedata-core-ktx-2.7.0-2 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\1f4d33f9ac1ff5e475eaf049f688e453\transformed\jetified-lifecycle-livedata-core-ktx-2.7.0\res
+com.example.gotilo_job.app-lifecycle-runtime-2.7.0-3 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\2294eefb534abc2045535b7af6255a48\transformed\lifecycle-runtime-2.7.0\res
+com.example.gotilo_job.app-jetified-savedstate-1.2.1-4 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\2b319ad35a4b6005bbfc69e621abc030\transformed\jetified-savedstate-1.2.1\res
+com.example.gotilo_job.app-lifecycle-livedata-core-2.7.0-5 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\30eeb90e513ca57c8c987dedaa9b6e63\transformed\lifecycle-livedata-core-2.7.0\res
+com.example.gotilo_job.app-jetified-annotation-experimental-1.4.0-6 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\321efa5c88d14288289767b3e2023ee8\transformed\jetified-annotation-experimental-1.4.0\res
+com.example.gotilo_job.app-recyclerview-1.0.0-7 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\47297d6866ecb1acd2f67da7d87972bd\transformed\recyclerview-1.0.0\res
+com.example.gotilo_job.app-jetified-window-java-1.2.0-8 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\5051cd0fd77d78968f6e04af0c3ca877\transformed\jetified-window-java-1.2.0\res
+com.example.gotilo_job.app-slidingpanelayout-1.2.0-9 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\5228accc50fba1639f81dc41d3df9709\transformed\slidingpanelayout-1.2.0\res
+com.example.gotilo_job.app-jetified-lifecycle-viewmodel-savedstate-2.7.0-10 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\57953d75b3cf5d7b94c973ace1e8022e\transformed\jetified-lifecycle-viewmodel-savedstate-2.7.0\res
+com.example.gotilo_job.app-jetified-profileinstaller-1.3.1-11 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\5bc56cc5b7ffd8cc90dd98ad06096d57\transformed\jetified-profileinstaller-1.3.1\res
+com.example.gotilo_job.app-jetified-lifecycle-process-2.7.0-12 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\5db26ab3c20b74cda61748dc3fbb729d\transformed\jetified-lifecycle-process-2.7.0\res
+com.example.gotilo_job.app-jetified-tracing-1.2.0-13 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\63784bb9bce35dfb3f1d34f8a0964243\transformed\jetified-tracing-1.2.0\res
+com.example.gotilo_job.app-jetified-startup-runtime-1.1.1-14 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\65ef756bb1711d8270ed5f8655e8502f\transformed\jetified-startup-runtime-1.1.1\res
+com.example.gotilo_job.app-jetified-core-1.0.0-15 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\6acfafc9039e2b6412036bdba204f456\transformed\jetified-core-1.0.0\res
+com.example.gotilo_job.app-lifecycle-viewmodel-2.7.0-16 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\93e18f6a5e59181863e718859ea25b4d\transformed\lifecycle-viewmodel-2.7.0\res
+com.example.gotilo_job.app-jetified-activity-1.9.3-17 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\941d490262e3d230616b5a2194a795d5\transformed\jetified-activity-1.9.3\res
+com.example.gotilo_job.app-jetified-core-ktx-1.13.1-18 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\a3908eb8ee0fdf37181339d64be30b18\transformed\jetified-core-ktx-1.13.1\res
+com.example.gotilo_job.app-core-1.13.1-19 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\abc854be44e9fdbce674543c7375e9a7\transformed\core-1.13.1\res
+com.example.gotilo_job.app-jetified-window-1.2.0-20 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\ad61718f9b81ae8ae66dd79e2d475697\transformed\jetified-window-1.2.0\res
+com.example.gotilo_job.app-jetified-savedstate-ktx-1.2.1-21 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\adff563997b783bcbb47f16665f5feb5\transformed\jetified-savedstate-ktx-1.2.1\res
+com.example.gotilo_job.app-jetified-lifecycle-viewmodel-ktx-2.7.0-22 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\b1a92cdcf5cb724193b459b185bd403c\transformed\jetified-lifecycle-viewmodel-ktx-2.7.0\res
+com.example.gotilo_job.app-jetified-appcompat-resources-1.1.0-23 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\b1d265450068c23bf25ba06740c7f0da\transformed\jetified-appcompat-resources-1.1.0\res
+com.example.gotilo_job.app-appcompat-1.1.0-24 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\b4fa2d26c37fb19542c5b5628b93cd2f\transformed\appcompat-1.1.0\res
+com.example.gotilo_job.app-lifecycle-livedata-2.7.0-25 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\c17430fc06c722918f27a04e6982930d\transformed\lifecycle-livedata-2.7.0\res
+com.example.gotilo_job.app-coordinatorlayout-1.0.0-26 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\c4144cf3222838f07cb33e2d6fc41d11\transformed\coordinatorlayout-1.0.0\res
+com.example.gotilo_job.app-preference-1.2.1-27 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\c4fbea930c622ddff2fbc7afcdf24661\transformed\preference-1.2.1\res
+com.example.gotilo_job.app-jetified-datastore-release-28 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\c6c8633a49e99a6521eebe35f3bb26a1\transformed\jetified-datastore-release\res
+com.example.gotilo_job.app-jetified-fragment-ktx-1.7.1-29 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\cfc0c0e2ffbb808bfdba976d493cc175\transformed\jetified-fragment-ktx-1.7.1\res
+com.example.gotilo_job.app-core-runtime-2.2.0-30 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\dfb80a893a9e49105ccf81a316fc086f\transformed\core-runtime-2.2.0\res
+com.example.gotilo_job.app-jetified-activity-ktx-1.9.3-31 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\e206d9faa770d4ea4b3ab92f1ffd1ae7\transformed\jetified-activity-ktx-1.9.3\res
+com.example.gotilo_job.app-jetified-datastore-preferences-release-32 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\e3dc5730e11160332644890ea1de8808\transformed\jetified-datastore-preferences-release\res
+com.example.gotilo_job.app-jetified-lifecycle-runtime-ktx-2.7.0-33 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\eb738660408cad5f12f8caa786c628db\transformed\jetified-lifecycle-runtime-ktx-2.7.0\res
+com.example.gotilo_job.app-jetified-datastore-core-release-34 C:\Users\IV PC-1\.gradle\caches\8.9\transforms\ef25a5bdd35662a2d30f2f945c1e8cd7\transformed\jetified-datastore-core-release\res
+com.example.gotilo_job.app-debug-35 E:\Harshil Flutter Project\zobportApp\android\app\src\debug\res
+com.example.gotilo_job.app-main-36 E:\Harshil Flutter Project\zobportApp\android\app\src\main\res
+com.example.gotilo_job.app-pngs-37 E:\Harshil Flutter Project\zobportApp\build\app\generated\res\pngs\debug
+com.example.gotilo_job.app-resValues-38 E:\Harshil Flutter Project\zobportApp\build\app\generated\res\resValues\debug
+com.example.gotilo_job.app-packageDebugResources-39 E:\Harshil Flutter Project\zobportApp\build\app\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.gotilo_job.app-packageDebugResources-40 E:\Harshil Flutter Project\zobportApp\build\app\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.gotilo_job.app-debug-41 E:\Harshil Flutter Project\zobportApp\build\app\intermediates\merged_res\debug\mergeDebugResources
+com.example.gotilo_job.app-debug-42 E:\Harshil Flutter Project\zobportApp\build\connectivity_plus\intermediates\packaged_res\debug\packageDebugResources
+com.example.gotilo_job.app-debug-43 E:\Harshil Flutter Project\zobportApp\build\file_picker\intermediates\packaged_res\debug\packageDebugResources
+com.example.gotilo_job.app-debug-44 E:\Harshil Flutter Project\zobportApp\build\flutter_plugin_android_lifecycle\intermediates\packaged_res\debug\packageDebugResources
+com.example.gotilo_job.app-debug-45 E:\Harshil Flutter Project\zobportApp\build\fluttertoast\intermediates\packaged_res\debug\packageDebugResources
+com.example.gotilo_job.app-debug-46 E:\Harshil Flutter Project\zobportApp\build\image_picker_android\intermediates\packaged_res\debug\packageDebugResources
+com.example.gotilo_job.app-debug-47 E:\Harshil Flutter Project\zobportApp\build\path_provider_android\intermediates\packaged_res\debug\packageDebugResources
+com.example.gotilo_job.app-debug-48 E:\Harshil Flutter Project\zobportApp\build\permission_handler_android\intermediates\packaged_res\debug\packageDebugResources
+com.example.gotilo_job.app-debug-49 E:\Harshil Flutter Project\zobportApp\build\shared_preferences_android\intermediates\packaged_res\debug\packageDebugResources

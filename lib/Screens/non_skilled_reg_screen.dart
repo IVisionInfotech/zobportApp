@@ -1,3 +1,6 @@
+import 'dart:convert';
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:gotilo_job/Screens/verify_otp_screen.dart';
 import 'package:gotilo_job/Utils/App_Colors.dart';
@@ -5,6 +8,7 @@ import 'package:gotilo_job/Utils/app_connectivity.dart';
 import 'package:gotilo_job/Utils/dynemicTextField.dart';
 import 'package:gotilo_job/Utils/responsive.dart';
 import 'package:gotilo_job/Utils/screen_config.dart';
+import 'package:http/http.dart' as http;
 
 class NonSkilledRegScreen extends StatefulWidget {
   const NonSkilledRegScreen({super.key});
@@ -55,6 +59,30 @@ class _NonSkilledRegScreenState extends State<NonSkilledRegScreen> {
     passwordController.dispose();
     confirmPasswordController.dispose();
     super.dispose();
+  }
+
+  Future<void> signup() async {
+    var res = await http.post(
+      Uri.parse("https://projectiv.in/zobpot/public/api/register"),
+      body: {
+        "name": "test 2",
+        "contact_no": "1234123444",
+        "email": "test12@gmail.com",
+        "city_id": "3",
+        "state_id": "1",
+        "zincode": "444444",
+        "password": "123458",
+        "state_name": "test state 1",
+        "city_name": "test city 1",
+        "zipcode": "12346",
+        "preference_type": "2",
+        "address": "mehsana",
+      },
+    );
+
+    var response = jsonDecode(res.body);
+
+    log("--------------------- $response");
   }
 
   @override
@@ -261,16 +289,19 @@ class _NonSkilledRegScreenState extends State<NonSkilledRegScreen> {
                       height: AppDimensions.getScreenHeight(context) * 0.04,
                     ),
                     InkWell(
-                      onTap:
-                          () => _internetChecker.onTapWithInternetCheck(() {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => VerifyOtpScreen(),
-                              ),
-                            );
-                            // }
-                          }),
+                      // onTap:
+                      //     () => _internetChecker.onTapWithInternetCheck(() {
+                      //       Navigator.push(
+                      //         context,
+                      //         MaterialPageRoute(
+                      //           builder: (context) => VerifyOtpScreen(),
+                      //         ),
+                      //       );
+                      //       // }
+                      //     }),
+                      onTap: () {
+                        signup();
+                      },
                       borderRadius: BorderRadius.circular(12),
                       child: Container(
                         height: ScreenSizeConfig.buttonHeight,
