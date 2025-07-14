@@ -4,7 +4,7 @@ import 'package:gotilo_job/Screens/edit_profile_screen.dart';
 import 'package:gotilo_job/Utils/App_Colors.dart';
 import 'package:gotilo_job/Utils/responsive.dart';
 import 'package:gotilo_job/Utils/screen_config.dart';
-import 'package:gotilo_job/pages/activitypage.dart';
+import 'package:gotilo_job/View/BottomNavigationBarScreens/Employee/Activity/activitypage.dart';
 
 class EditProGenInfScreen extends StatefulWidget {
   const EditProGenInfScreen({super.key});

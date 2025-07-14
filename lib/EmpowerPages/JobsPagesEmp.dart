@@ -8,7 +8,7 @@ import 'package:gotilo_job/Utils/App_Colors.dart';
 import 'package:gotilo_job/Utils/custom_radio_button.dart';
 import 'package:gotilo_job/Utils/responsive.dart';
 import 'package:gotilo_job/Utils/screen_config.dart';
-import 'package:gotilo_job/pages/homepage.dart';
+import 'package:gotilo_job/View/BottomNavigationBarScreens/Employee/HomePage/homepage.dart';
 
 class JobspagesEmp extends StatelessWidget {
   JobspagesEmp({super.key});

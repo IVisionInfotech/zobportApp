@@ -13,23 +13,23 @@
 13         to allow setting breakpoints, to provide hot reload, etc.
 14    -->
 15    <uses-permission android:name="android.permission.INTERNET" />
-15-->E:\Harshil Flutter Project\gotilo_job\android\app\src\main\AndroidManifest.xml:6:5-66
-15-->E:\Harshil Flutter Project\gotilo_job\android\app\src\main\AndroidManifest.xml:6:22-64
+15-->E:\Harshil Flutter Project\zobportApp\android\app\src\main\AndroidManifest.xml:6:5-66
+15-->E:\Harshil Flutter Project\zobportApp\android\app\src\main\AndroidManifest.xml:6:22-64
 16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-16-->E:\Harshil Flutter Project\gotilo_job\android\app\src\main\AndroidManifest.xml:2:5-80
-16-->E:\Harshil Flutter Project\gotilo_job\android\app\src\main\AndroidManifest.xml:2:22-78
+16-->E:\Harshil Flutter Project\zobportApp\android\app\src\main\AndroidManifest.xml:2:5-80
+16-->E:\Harshil Flutter Project\zobportApp\android\app\src\main\AndroidManifest.xml:2:22-78
 17    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-17-->E:\Harshil Flutter Project\gotilo_job\android\app\src\main\AndroidManifest.xml:3:5-79
-17-->E:\Harshil Flutter Project\gotilo_job\android\app\src\main\AndroidManifest.xml:3:22-77
+17-->E:\Harshil Flutter Project\zobportApp\android\app\src\main\AndroidManifest.xml:3:5-79
+17-->E:\Harshil Flutter Project\zobportApp\android\app\src\main\AndroidManifest.xml:3:22-77
 18    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
-18-->E:\Harshil Flutter Project\gotilo_job\android\app\src\main\AndroidManifest.xml:4:5-75
-18-->E:\Harshil Flutter Project\gotilo_job\android\app\src\main\AndroidManifest.xml:4:22-73
+18-->E:\Harshil Flutter Project\zobportApp\android\app\src\main\AndroidManifest.xml:4:5-75
+18-->E:\Harshil Flutter Project\zobportApp\android\app\src\main\AndroidManifest.xml:4:22-73
 19    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
-19-->E:\Harshil Flutter Project\gotilo_job\android\app\src\main\AndroidManifest.xml:5:5-74
-19-->E:\Harshil Flutter Project\gotilo_job\android\app\src\main\AndroidManifest.xml:5:22-72
+19-->E:\Harshil Flutter Project\zobportApp\android\app\src\main\AndroidManifest.xml:5:5-74
+19-->E:\Harshil Flutter Project\zobportApp\android\app\src\main\AndroidManifest.xml:5:22-72
 20    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-20-->E:\Harshil Flutter Project\gotilo_job\android\app\src\main\AndroidManifest.xml:7:5-79
-20-->E:\Harshil Flutter Project\gotilo_job\android\app\src\main\AndroidManifest.xml:7:22-76
+20-->E:\Harshil Flutter Project\zobportApp\android\app\src\main\AndroidManifest.xml:7:5-79
+20-->E:\Harshil Flutter Project\zobportApp\android\app\src\main\AndroidManifest.xml:7:22-76
 21    <!--
 22 Required to query activities that can process text, see:
 23         https://developer.android.com/training/package-visibility and
@@ -38,26 +38,26 @@
 26         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
 27    -->
 28    <queries>
-28-->E:\Harshil Flutter Project\gotilo_job\android\app\src\main\AndroidManifest.xml:45:5-50:15
+28-->E:\Harshil Flutter Project\zobportApp\android\app\src\main\AndroidManifest.xml:45:5-50:15
 29        <intent>
-29-->E:\Harshil Flutter Project\gotilo_job\android\app\src\main\AndroidManifest.xml:46:9-49:18
+29-->E:\Harshil Flutter Project\zobportApp\android\app\src\main\AndroidManifest.xml:46:9-49:18
 30            <action android:name="android.intent.action.PROCESS_TEXT" />
-30-->E:\Harshil Flutter Project\gotilo_job\android\app\src\main\AndroidManifest.xml:47:13-72
-30-->E:\Harshil Flutter Project\gotilo_job\android\app\src\main\AndroidManifest.xml:47:21-70
+30-->E:\Harshil Flutter Project\zobportApp\android\app\src\main\AndroidManifest.xml:47:13-72
+30-->E:\Harshil Flutter Project\zobportApp\android\app\src\main\AndroidManifest.xml:47:21-70
 31
 32            <data android:mimeType="text/plain" />
-32-->E:\Harshil Flutter Project\gotilo_job\android\app\src\main\AndroidManifest.xml:48:13-50
-32-->E:\Harshil Flutter Project\gotilo_job\android\app\src\main\AndroidManifest.xml:48:19-48
+32-->E:\Harshil Flutter Project\zobportApp\android\app\src\main\AndroidManifest.xml:48:13-50
+32-->E:\Harshil Flutter Project\zobportApp\android\app\src\main\AndroidManifest.xml:48:19-48
 33        </intent>
 34        <intent>
-34-->[:file_picker] E:\Harshil Flutter Project\gotilo_job\build\file_picker\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:8:9-12:18
+34-->[:file_picker] E:\Harshil Flutter Project\zobportApp\build\file_picker\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:8:9-12:18
 35            <action android:name="android.intent.action.GET_CONTENT" />
-35-->[:file_picker] E:\Harshil Flutter Project\gotilo_job\build\file_picker\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:13-72
-35-->[:file_picker] E:\Harshil Flutter Project\gotilo_job\build\file_picker\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:21-69
+35-->[:file_picker] E:\Harshil Flutter Project\zobportApp\build\file_picker\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:13-72
+35-->[:file_picker] E:\Harshil Flutter Project\zobportApp\build\file_picker\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:21-69
 36
 37            <data android:mimeType="*/*" />
-37-->E:\Harshil Flutter Project\gotilo_job\android\app\src\main\AndroidManifest.xml:48:13-50
-37-->E:\Harshil Flutter Project\gotilo_job\android\app\src\main\AndroidManifest.xml:48:19-48
+37-->E:\Harshil Flutter Project\zobportApp\android\app\src\main\AndroidManifest.xml:48:13-50
+37-->E:\Harshil Flutter Project\zobportApp\android\app\src\main\AndroidManifest.xml:48:19-48
 38        </intent>
 39    </queries>
 40
@@ -79,7 +79,7 @@
 50        android:debuggable="true"
 51        android:extractNativeLibs="true"
 52        android:icon="@mipmap/ic_launcher"
-53        android:label="gotilo_job" >
+53        android:label="Zobpot" >
 54        <activity
 55            android:name="com.example.gotilo_job.MainActivity"
 56            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
@@ -115,43 +115,43 @@
 86            android:value="2" />
 87
 88        <provider
-88-->[:image_picker_android] E:\Harshil Flutter Project\gotilo_job\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:9-17:20
+88-->[:image_picker_android] E:\Harshil Flutter Project\zobportApp\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:9-17:20
 89            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
-89-->[:image_picker_android] E:\Harshil Flutter Project\gotilo_job\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:10:13-82
+89-->[:image_picker_android] E:\Harshil Flutter Project\zobportApp\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:10:13-82
 90            android:authorities="com.example.gotilo_job.flutter.image_provider"
-90-->[:image_picker_android] E:\Harshil Flutter Project\gotilo_job\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:11:13-74
+90-->[:image_picker_android] E:\Harshil Flutter Project\zobportApp\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:11:13-74
 91            android:exported="false"
-91-->[:image_picker_android] E:\Harshil Flutter Project\gotilo_job\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:12:13-37
+91-->[:image_picker_android] E:\Harshil Flutter Project\zobportApp\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:12:13-37
 92            android:grantUriPermissions="true" >
-92-->[:image_picker_android] E:\Harshil Flutter Project\gotilo_job\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:13:13-47
+92-->[:image_picker_android] E:\Harshil Flutter Project\zobportApp\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:13:13-47
 93            <meta-data
-93-->[:image_picker_android] E:\Harshil Flutter Project\gotilo_job\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:14:13-16:75
+93-->[:image_picker_android] E:\Harshil Flutter Project\zobportApp\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:14:13-16:75
 94                android:name="android.support.FILE_PROVIDER_PATHS"
-94-->[:image_picker_android] E:\Harshil Flutter Project\gotilo_job\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:15:17-67
+94-->[:image_picker_android] E:\Harshil Flutter Project\zobportApp\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:15:17-67
 95                android:resource="@xml/flutter_image_picker_file_paths" />
-95-->[:image_picker_android] E:\Harshil Flutter Project\gotilo_job\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:16:17-72
+95-->[:image_picker_android] E:\Harshil Flutter Project\zobportApp\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:16:17-72
 96        </provider> <!-- Trigger Google Play services to install the backported photo picker module. -->
 97        <service
-97-->[:image_picker_android] E:\Harshil Flutter Project\gotilo_job\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:19:9-31:19
+97-->[:image_picker_android] E:\Harshil Flutter Project\zobportApp\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:19:9-31:19
 98            android:name="com.google.android.gms.metadata.ModuleDependencies"
-98-->[:image_picker_android] E:\Harshil Flutter Project\gotilo_job\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:20:13-78
+98-->[:image_picker_android] E:\Harshil Flutter Project\zobportApp\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:20:13-78
 99            android:enabled="false"
-99-->[:image_picker_android] E:\Harshil Flutter Project\gotilo_job\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:21:13-36
+99-->[:image_picker_android] E:\Harshil Flutter Project\zobportApp\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:21:13-36
 100            android:exported="false" >
-100-->[:image_picker_android] E:\Harshil Flutter Project\gotilo_job\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:22:13-37
+100-->[:image_picker_android] E:\Harshil Flutter Project\zobportApp\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:22:13-37
 101            <intent-filter>
-101-->[:image_picker_android] E:\Harshil Flutter Project\gotilo_job\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:24:13-26:29
+101-->[:image_picker_android] E:\Harshil Flutter Project\zobportApp\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:24:13-26:29
 102                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES" />
-102-->[:image_picker_android] E:\Harshil Flutter Project\gotilo_job\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:25:17-94
-102-->[:image_picker_android] E:\Harshil Flutter Project\gotilo_job\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:25:25-91
+102-->[:image_picker_android] E:\Harshil Flutter Project\zobportApp\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:25:17-94
+102-->[:image_picker_android] E:\Harshil Flutter Project\zobportApp\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:25:25-91
 103            </intent-filter>
 104
 105            <meta-data
-105-->[:image_picker_android] E:\Harshil Flutter Project\gotilo_job\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:28:13-30:36
+105-->[:image_picker_android] E:\Harshil Flutter Project\zobportApp\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:28:13-30:36
 106                android:name="photopicker_activity:0:required"
-106-->[:image_picker_android] E:\Harshil Flutter Project\gotilo_job\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:29:17-63
+106-->[:image_picker_android] E:\Harshil Flutter Project\zobportApp\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:29:17-63
 107                android:value="" />
-107-->[:image_picker_android] E:\Harshil Flutter Project\gotilo_job\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:30:17-33
+107-->[:image_picker_android] E:\Harshil Flutter Project\zobportApp\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:30:17-33
 108        </service>
 109
 110        <uses-library
