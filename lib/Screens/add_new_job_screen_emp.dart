@@ -30,7 +30,7 @@ class _AddNewJobScreenEmpState extends State<AddNewJobScreenEmp> {
       TextEditingController();
   final TextEditingController nightShiftSalaryController =
       TextEditingController();
-  List<String> selectedSkills = ['Leadership', 'Flutter'];
+  List<String> selectedSkills = ['Leadership fvdgfdgdfgdfgfdgf', 'Flutter'];
   @override
   Widget build(BuildContext context) {
     ScreenSizeConfig.init(context);
