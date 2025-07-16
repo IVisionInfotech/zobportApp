@@ -17,7 +17,9 @@ class dynemicTextField extends StatelessWidget {
   final VoidCallback? onTap;
   final List<TextInputFormatter>? inputFormatters;
   final bool? obscureText;
-  final Color? cursorColor; // <-- Added
+  final Color? cursorColor;
+  final int? maxlenght;
+  final ValueChanged<String>? onChanged; // Added onChanged property
 
   const dynemicTextField({
     Key? key,
@@ -31,11 +33,13 @@ class dynemicTextField extends StatelessWidget {
     this.maxLines = 1,
     this.keyboardType = TextInputType.text,
     this.prefixIcon,
+    this.maxlenght,
     this.suffixIcon,
     this.onTap,
     this.inputFormatters,
     this.obscureText,
-    this.cursorColor, // <-- Added
+    this.cursorColor,
+    this.onChanged, // Added to constructor
   }) : super(key: key);
 
   @override
@@ -55,13 +59,12 @@ class dynemicTextField extends StatelessWidget {
               validator: validator,
               readOnly: readOnly,
               onTap: onTap,
+              onChanged: onChanged, // Added onChanged to TextFormField
               maxLines: maxLines,
               keyboardType: keyboardType,
+              maxLength: maxlenght,
               obscureText:
                   obscureText ?? (enablePasswordToggle ? !visible : false),
-              // style: CustomTextStyle.formHint,
-              inputFormatters: inputFormatters,
-              // cursorColor: cursorColor, // <-- Added
               cursorColor: AppColors.TxtblueColor,
               decoration: InputDecoration(
                 hintText: label,
@@ -88,7 +91,6 @@ class dynemicTextField extends StatelessWidget {
                     width: 1.5,
                   ),
                 ),
-                // errorStyle: CustomTextStyle.formError,
                 prefixIcon: prefixIcon,
                 suffixIcon:
                     enablePasswordToggle

@@ -91,10 +91,10 @@ class _VerifyOtpScreenState extends State<VerifyOtpScreen> {
                       SizedBox(height: 50),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: List.generate(4, (index) => buildOtpBox()),
+                        children: List.generate(6, (index) => buildOtpBox()),
                       ),
                       SizedBox(
-                        height: AppDimensions.getScreenHeight(context) * 0.1,
+                        height: AppDimensions.getScreenHeight(context) * 0.05,
                       ),
                       Center(
                         child: RichText(
@@ -173,8 +173,8 @@ class _VerifyOtpScreenState extends State<VerifyOtpScreen> {
 
   Widget buildOtpBox() {
     return Container(
-      width: 60,
-      height: 60,
+      width: 50,
+      height: 50,
       decoration: BoxDecoration(
         color: Color(0xFF26824),
         border: Border.all(color: Color(0xFF242A62), width: 1.0),

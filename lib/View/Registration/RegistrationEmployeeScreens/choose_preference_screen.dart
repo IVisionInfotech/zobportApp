@@ -110,7 +110,8 @@ class _ChoosePreferenceScreenState extends State<ChoosePreferenceScreen> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => SkilledRegScreen(),
+                              builder:
+                                  (context) => SkilledRegistrationStepper(),
                             ),
                           );
                         }),

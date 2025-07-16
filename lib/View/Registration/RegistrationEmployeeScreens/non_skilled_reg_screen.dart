@@ -10,9 +10,11 @@ import 'package:gotilo_job/Utils/dynemicTextField.dart';
 import 'package:gotilo_job/Utils/responsive.dart';
 import 'package:gotilo_job/Utils/screen_config.dart';
 import 'package:gotilo_job/Services/api_service.dart';
+import 'package:animated_snack_bar/animated_snack_bar.dart';
 
 class NonSkilledRegScreen extends StatefulWidget {
   const NonSkilledRegScreen({Key? key}) : super(key: key);
+
   @override
   State<NonSkilledRegScreen> createState() => _NonSkilledRegScreenState();
 }
@@ -48,6 +50,7 @@ class _NonSkilledRegScreenState extends State<NonSkilledRegScreen> {
   bool showStateList = false;
   bool showCityList = false;
   bool showPincodeList = false;
+  bool _isSubmitting = false;
 
   @override
   void initState() {
@@ -122,94 +125,88 @@ class _NonSkilledRegScreenState extends State<NonSkilledRegScreen> {
     }
   }
 
-  // void onRegister() async {
-  //   if (!_formKey.currentState!.validate()) return;
-
-  //   final payload = {
-  //     "name": firstNameController.text.trim() +lastNameController.text.trim() ,
-  //    // "last_name": lastNameController.text.trim(),
-  //     "contact_no": contactController.text.trim(),
-  //     "email": emailController.text.trim(),
-  //     "address": addressController.text.trim(),
-  //     "state_name": selectedStateId.toString(),
-  //     "city_id": selectedCityId.toString(),
-  //     "zincode": selectedPincode,
-  //     "password": passwordController.text,
-  //     "confirm_password": confirmPasswordController.text,
-  //     "state_id" :selectedStateId.toString(),
-  //     "city_name": selectedCityId.toString(),
-  //     "preference_type":'2',
-  //   };
-
-  //   //_internetChecker.onTapWithInternetCheck(() async {
-  //     // try {
-  //       final response = await http.post(
-  //         Uri.parse(ApiService.postnonSkillRegistrationUrl),
-  //         // headers: {"Content-Type": "application/x-www-form-urlencoded"},
-  //         body: jsonEncode,
-  //       );
-
-  //       // if (response.statusCode == 200) {
-  //       //   final data = jsonDecode(response.body);
-  //       //   log("--------------- $data");
-  //       //   if (data['status'] == true) {
-  //       //     final userId = data['user_id'];
-  //       //     print("non Skilled Reg Response:$response");
-  //       //      print("non Skilled payload:$payload");
-  //       //     await SharedPrefService.saveUserId(userId);
-  //       //     ScaffoldMessenger.of(
-  //       //       context,
-  //       //     ).showSnackBar(SnackBar(content: Text(data['message'])));
-  //       //     Navigator.push(
-  //       //       context,
-  //       //       MaterialPageRoute(builder: (_) => VerifyOtpScreen()),
-  //       //     );
-  //       //   } else {
-  //       //     ScaffoldMessenger.of(context).showSnackBar(
-  //       //       SnackBar(content: Text(data['message'] ?? 'Registration failed')),
-  //       //     );
-  //       //   }
-  //       // } else {
-  //       //   ScaffoldMessenger.of(context).showSnackBar(
-  //       //     SnackBar(content: Text('Server Error: ${response.statusCode}'),
-  //       //   ),
-            
-  //       //   );
-  //       // }
-  //       log("======>Response${jsonDecode(response.body)}");
-  //       print("Error non skilled :${response.statusCode}");
-  //         //  print("Error non skilled :${}");
-  //     // } catch (e) {
-  //     //   ScaffoldMessenger.of(
-  //     //     context,
-  //     //   ).showSnackBar(SnackBar(content: Text('Error: ${e.toString()}')));
-  //     // }
-  // //  });
-  // }
   Future<void> signup() async {
-    var res = await http.post(
-      Uri.parse("https://projectiv.in/zobpot/public/api/register"),
-      body: {
-        "name": "test 2",
-        "contact_no": "1234123444",
-        "email": "test12@gmail.com",
-        "city_id": "3",
-        "state_id": "1",
-        "zincode": "444444",
-        "password": "123458",
-        "state_name": "test state 1",
-        "city_name": "test city 1",
-        "zipcode": "12346",
-        "preference_type": "2",
-        "address": "mehsana",
-      },
-    );
+    if (_isSubmitting) return;
+    if (!_formKey.currentState!.validate()) return;
 
-    var response = jsonDecode(res.body);
+    setState(() => _isSubmitting = true);
 
-    log("--------------------- $response");
+    final payload = {
+      "name":
+          "${firstNameController.text.trim()} ${lastNameController.text.trim()}",
+      "contact_no": contactController.text.trim(),
+      "email": emailController.text.trim(),
+      "city_id": selectedCityId?.toString() ?? '',
+      "state_id": selectedStateId?.toString() ?? '',
+      "password": passwordController.text.trim(),
+      "state_name": stateController.text.trim(),
+      "city_name": cityController.text.trim(),
+      "zipcode": selectedPincode ?? '',
+      "preference_type": "2",
+      "address": addressController.text.trim(),
+    };
+
+    try {
+      final response = await http.post(
+        Uri.parse("https://projectiv.in/zobpot/public/api/register"),
+        headers: {"Content-Type": "application/x-www-form-urlencoded"},
+        body: payload,
+      );
+
+      log("Signup raw response: ${response.body}");
+
+      if (response.statusCode == 200) {
+        final responseBody = jsonDecode(response.body);
+        log("Signup parsed response: $responseBody");
+
+        if (responseBody['status'] == true) {
+          final userId = responseBody['user_id'];
+          await SharedPrefService.saveUserId(userId);
+
+          AnimatedSnackBar.material(
+            responseBody['message'] ?? "Registered successfully",
+            type: AnimatedSnackBarType.success,
+            duration: const Duration(seconds: 3),
+            desktopSnackBarPosition: DesktopSnackBarPosition.topCenter,
+          ).show(context);
+
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (_) => const VerifyOtpScreen()),
+          );
+        } else {
+          AnimatedSnackBar.material(
+            responseBody['message'] ?? "Registration failed",
+            type: AnimatedSnackBarType.error,
+            duration: const Duration(seconds: 3),
+            desktopSnackBarPosition: DesktopSnackBarPosition.topCenter,
+          ).show(context);
+        }
+      } else {
+        log(
+          "Signup failed: Status ${response.statusCode} Body: ${response.body}",
+        );
+        AnimatedSnackBar.material(
+          "Server error: ${response.statusCode}",
+          type: AnimatedSnackBarType.error,
+          duration: const Duration(seconds: 3),
+          desktopSnackBarPosition: DesktopSnackBarPosition.topCenter,
+        ).show(context);
+      }
+    } catch (e) {
+      log("Signup Error: $e");
+      AnimatedSnackBar.material(
+        "Something went wrong: $e",
+        type: AnimatedSnackBarType.error,
+        duration: const Duration(seconds: 3),
+        desktopSnackBarPosition: DesktopSnackBarPosition.topCenter,
+      ).show(context);
+    } finally {
+      setState(() => _isSubmitting = false);
+    }
   }
 
+  // Modified autocompleteField to filter list based on input and auto-add new items
   Widget autocompleteField({
     required String label,
     required TextEditingController ctrl,
@@ -226,7 +223,7 @@ class _NonSkilledRegScreenState extends State<NonSkilledRegScreen> {
           title: label,
           label: label,
           controller: ctrl,
-          readOnly: true,
+          readOnly: false,
           onTap: () {
             setState(() {
               if (label == 'State')
@@ -257,10 +254,25 @@ class _NonSkilledRegScreenState extends State<NonSkilledRegScreen> {
               ],
             ),
             child: ListView.builder(
-              itemCount: items.length,
+              itemCount:
+                  items
+                      .where(
+                        (e) => e[displayKey].toLowerCase().contains(
+                          ctrl.text.toLowerCase(),
+                        ),
+                      )
+                      .toList()
+                      .length,
               shrinkWrap: true,
               itemBuilder: (context, index) {
-                final item = items[index];
+                final item =
+                    items
+                        .where(
+                          (e) => e[displayKey].toLowerCase().contains(
+                            ctrl.text.toLowerCase(),
+                          ),
+                        )
+                        .toList()[index];
                 return GestureDetector(
                   onTap: () {
                     onSelect(item);
@@ -278,6 +290,44 @@ class _NonSkilledRegScreenState extends State<NonSkilledRegScreen> {
                   ),
                 );
               },
+            ),
+          ),
+        // Add the new entry if not found
+        if (ctrl.text.isNotEmpty &&
+            !items.any(
+              (e) => e[displayKey].toLowerCase() == ctrl.text.toLowerCase(),
+            ))
+          Padding(
+            padding: const EdgeInsets.only(top: 10),
+            child: GestureDetector(
+              onTap: () {
+                final newItem = {displayKey: ctrl.text};
+                setState(() {
+                  items.add(newItem);
+                  showStateList = false;
+                  // Update the state, city, or pincode
+                  if (label == 'State') {
+                    fetchCities(selectedStateId!); // Refresh cities
+                  }
+                  if (label == 'City') {
+                    fetchPincodes(selectedCityId!); // Refresh pincodes
+                  }
+                });
+              },
+              child: Container(
+                padding: const EdgeInsets.symmetric(
+                  vertical: 10,
+                  horizontal: 10,
+                ),
+                decoration: BoxDecoration(
+                  color: Colors.blueAccent,
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                child: const Text(
+                  "Add New",
+                  style: TextStyle(color: Colors.white, fontSize: 14),
+                ),
+              ),
             ),
           ),
       ],
@@ -306,6 +356,7 @@ class _NonSkilledRegScreenState extends State<NonSkilledRegScreen> {
         padding: EdgeInsets.all(16),
         child: Form(
           key: _formKey,
+          autovalidateMode: AutovalidateMode.onUserInteraction,
           child: Column(
             children: [
               Row(
@@ -337,7 +388,17 @@ class _NonSkilledRegScreenState extends State<NonSkilledRegScreen> {
                 label: "Contact",
                 keyboardType: TextInputType.phone,
                 controller: contactController,
-                validator: (v) => v == null || v.isEmpty ? 'Required' : null,
+                //  maxlenght: 10,
+                validator: (v) {
+                  if (v == null || v.isEmpty) {
+                    return 'Contact number is required';
+                  } else if (v.length != 10) {
+                    return 'Contact number must be 10 digits';
+                  } else if (!RegExp(r'^[0-9]+$').hasMatch(v)) {
+                    return 'Only numbers are allowed';
+                  }
+                  return null;
+                },
               ),
               SizedBox(height: 16),
               dynemicTextField(
@@ -429,26 +490,34 @@ class _NonSkilledRegScreenState extends State<NonSkilledRegScreen> {
                 },
               ),
               SizedBox(height: 32),
-
               InkWell(
-                onTap: () {
-                  signup();
-                },
+                onTap:
+                    _isSubmitting
+                        ? null
+                        : () {
+                          if (_formKey.currentState!.validate()) {
+                            signup();
+                          }
+                        },
                 child: Container(
                   height: ScreenSizeConfig.buttonHeight,
                   width: double.infinity,
                   decoration: BoxDecoration(
-                    color: AppColors.TxtOrangeColor,
+                    color:
+                        _isSubmitting ? Colors.grey : AppColors.TxtOrangeColor,
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Center(
-                    child: Text(
-                      "Register",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: ScreenSizeConfig.fontSize,
-                      ),
-                    ),
+                    child:
+                        _isSubmitting
+                            ? CircularProgressIndicator(color: Colors.white)
+                            : Text(
+                              "Register",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: ScreenSizeConfig.fontSize,
+                              ),
+                            ),
                   ),
                 ),
               ),

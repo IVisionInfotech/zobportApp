@@ -1,10 +1,10 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:gotilo_job/View/Registration/RegistrationCompanyScreens/more_info_com_screen.dart';
-import 'package:gotilo_job/Utils/App_Colors.dart';
 import 'package:gotilo_job/Services/app_connectivity.dart';
+import 'package:gotilo_job/Utils/App_Colors.dart';
 import 'package:gotilo_job/Utils/responsive.dart';
 import 'package:gotilo_job/Utils/screen_config.dart';
+import 'package:gotilo_job/View/Registration/RegistrationCompanyScreens/more_info_com_screen.dart';
 import 'package:gotilo_job/controller/form_controller.dart';
 import 'package:image_picker/image_picker.dart';
 
@@ -108,31 +108,32 @@ class _RegisterCompanyScreenState extends State<RegisterCompanyScreen> {
                       onTap: () {
                         pickImage();
                       },
-                      // child:
-                      //     _imageFile == null
-                      //         ? Image.asset(
-                      //           Assets.registerComImg,
-                      //           width:
-                      //               AppDimensions.getScreenWidth(context) *
-                      //               0.32,
-                      //           height:
-                      //               AppDimensions.getScreenWidth(context) *
-                      //               0.32,
-                      //           fit: BoxFit.cover,
-                      //         )
-                      //         : ClipRRect(
-                      //           borderRadius: BorderRadius.circular(10),
-                      //           child: Image.file(
-                      //             _imageFile!,
-                      //             width:
-                      //                 AppDimensions.getScreenWidth(context) *
-                      //                 0.32,
-                      //             height:
-                      //                 AppDimensions.getScreenWidth(context) *
-                      //                 0.32,
-                      //             fit: BoxFit.cover,
-                      //           ),
-                      //         ),
+                      child:
+                          _imageFile == null
+                              ? Image.asset(
+                                "assets/images/logo.png",
+                                //   Assets.registerComImg,
+                                width:
+                                    AppDimensions.getScreenWidth(context) *
+                                    0.32,
+                                height:
+                                    AppDimensions.getScreenWidth(context) *
+                                    0.32,
+                                fit: BoxFit.cover,
+                              )
+                              : ClipRRect(
+                                borderRadius: BorderRadius.circular(10),
+                                child: Image.file(
+                                  _imageFile!,
+                                  width:
+                                      AppDimensions.getScreenWidth(context) *
+                                      0.32,
+                                  height:
+                                      AppDimensions.getScreenWidth(context) *
+                                      0.32,
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
                     ),
                     SizedBox(
                       height: AppDimensions.getScreenHeight(context) * 0.06,
