@@ -36,7 +36,9 @@ class FromCtrollerSkilled extends GetxController {
 
   // Validation Methods
   String? validateRequired(String? value) {
-    return value == null || value.trim().isEmpty ? "This field is required" : null;
+    return value == null || value.trim().isEmpty
+        ? "This field is required"
+        : null;
   }
 
   String? validateEmail(String? value) {
@@ -47,7 +49,8 @@ class FromCtrollerSkilled extends GetxController {
   }
 
   String? validatePhoneNumber(String? value) {
-    if (value == null || value.trim().isEmpty) return "Phone number is required";
+    if (value == null || value.trim().isEmpty)
+      return "Phone number is required";
     String pattern = r'^\+91[6-9]\d{9}$';
     RegExp regex = RegExp(pattern);
     return regex.hasMatch(value) ? null : "Enter a valid Indian phone number";
@@ -112,7 +115,11 @@ class FromCtrollerSkilled extends GetxController {
 
   void submitForm() {
     if (formKey.currentState!.validate()) {
-      Get.snackbar("Success", "Form Submitted Successfully!", snackPosition: SnackPosition.BOTTOM);
+      Get.snackbar(
+        "Success",
+        "Form Submitted Successfully!",
+        snackPosition: SnackPosition.BOTTOM,
+      );
     }
   }
 }
