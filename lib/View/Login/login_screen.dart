@@ -1,10 +1,11 @@
 import 'package:email_validator/email_validator.dart';
 import 'package:flutter/material.dart';
+import 'package:gotilo_job/View/Registration/RegistrationCompanyScreens/registration_company_screen.dart'
+    as company_screen;
 import 'package:gotilo_job/View/Registration/RegistrationEmployeeScreens/choose_preference_screen.dart';
 import 'package:gotilo_job/View/Login/forgot_password_screen.dart';
 import 'package:gotilo_job/View/BottomNavigationBarScreens/Employee/employee_bottom_navigation_bar.dart';
-import 'package:gotilo_job/View/Registration/RegistrationCompanyScreens/register_company_screen.dart';
-import 'package:gotilo_job/Utils/App_Colors.dart';
+import 'package:gotilo_job/Utils/App_Colors.dart' as app_utils;
 import 'package:gotilo_job/Services/app_connectivity.dart';
 import 'package:gotilo_job/Utils/dynemicTextField.dart';
 import 'package:gotilo_job/Utils/responsive.dart';
@@ -52,7 +53,7 @@ class _LoginScreenState extends State<LoginScreen> {
         FocusScope.of(context).unfocus();
       },
       child: Scaffold(
-        backgroundColor: AppColors.whiteColor,
+        backgroundColor: app_utils.AppColors.whiteColor,
         body: SingleChildScrollView(
           physics: BouncingScrollPhysics(),
           child: Padding(
@@ -81,10 +82,10 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   Text(
                     "Welcome Back",
-                    style: CustomTextStyle.customStyle(
+                    style: app_utils.CustomTextStyle.customStyle(
                       fontSize: ScreenSizeConfig.fontSize + 8,
-                      color: AppColors.TxtblueColor,
-                      fontFamily: TextFont.PoppinsMedium,
+                      color: app_utils.AppColors.TxtblueColor,
+                      fontFamily: app_utils.TextFont.PoppinsMedium,
                     ),
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
@@ -94,10 +95,10 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   Text(
                     "Login to access thousands job opportunities.",
-                    style: CustomTextStyle.normalBluecustom(
+                    style: app_utils.CustomTextStyle.normalBluecustom(
                       fontSize: ScreenSizeConfig.fontSize - 1,
-                      color: AppColors.TxtIntroColor,
-                      fontFamily: TextFont.PoppinsRegular,
+                      color: app_utils.AppColors.TxtIntroColor,
+                      fontFamily: app_utils.TextFont.PoppinsRegular,
                     ),
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
@@ -111,7 +112,10 @@ class _LoginScreenState extends State<LoginScreen> {
                     controller: emailController,
                     validator: validateEmail,
                     keyboardType: TextInputType.emailAddress,
-                    prefixIcon: Icon(Icons.email, color: AppColors.TxtWelColor),
+                    prefixIcon: Icon(
+                      Icons.email,
+                      color: app_utils.AppColors.TxtWelColor,
+                    ),
                     readOnly: false,
                   ),
                   SizedBox(
@@ -123,7 +127,10 @@ class _LoginScreenState extends State<LoginScreen> {
                     controller: passwordController,
                     isVisible: ValueNotifier(isObscured),
                     showPassword: true,
-                    prefixIcon: Icon(Icons.lock, color: AppColors.TxtWelColor),
+                    prefixIcon: Icon(
+                      Icons.lock,
+                      color: app_utils.AppColors.TxtWelColor,
+                    ),
                     validator: (value) {
                       if (value == null || value.isEmpty) {
                         return 'Password is required';
@@ -154,11 +161,11 @@ class _LoginScreenState extends State<LoginScreen> {
                               isRememberMeChecked
                                   ? Icon(
                                     Icons.check_circle_sharp,
-                                    color: AppColors.TxtWelColor,
+                                    color: app_utils.AppColors.TxtWelColor,
                                   )
                                   : Icon(
                                     Icons.circle_outlined,
-                                    color: AppColors.TxtblueColor,
+                                    color: app_utils.AppColors.TxtblueColor,
                                   ),
                         ),
                       ),
@@ -166,8 +173,8 @@ class _LoginScreenState extends State<LoginScreen> {
                         "Remember me",
                         style: TextStyle(
                           fontSize: ScreenSizeConfig.fontSize,
-                          color: AppColors.TxtblueColor,
-                          fontFamily: TextFont.PoppinsMedium,
+                          color: app_utils.AppColors.TxtblueColor,
+                          fontFamily: app_utils.TextFont.PoppinsMedium,
                         ),
                       ),
                       Spacer(),
@@ -188,8 +195,8 @@ class _LoginScreenState extends State<LoginScreen> {
                             "Forgot Password ?",
                             style: TextStyle(
                               fontSize: ScreenSizeConfig.fontSize,
-                              color: AppColors.TxtblueColor,
-                              fontFamily: TextFont.PoppinsMedium,
+                              color: app_utils.AppColors.TxtblueColor,
+                              fontFamily: app_utils.TextFont.PoppinsMedium,
                             ),
                           ),
                         ),
@@ -206,7 +213,8 @@ class _LoginScreenState extends State<LoginScreen> {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => BottomNavigationBarScreen(),
+                                builder:
+                                    (context) => BottomNavigationBarScreen(),
                               ),
                             );
                           }
@@ -216,7 +224,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       height: ScreenSizeConfig.buttonHeight,
                       width: double.infinity,
                       decoration: BoxDecoration(
-                        color: AppColors.TxtOrangeColor,
+                        color: app_utils.AppColors.TxtOrangeColor,
                         borderRadius: BorderRadius.circular(10),
                       ),
                       alignment: Alignment.center,
@@ -225,7 +233,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: ScreenSizeConfig.fontSize,
-                          fontFamily: TextFont.PoppinsMedium,
+                          fontFamily: app_utils.TextFont.PoppinsMedium,
                         ),
                       ),
                     ),
@@ -239,10 +247,10 @@ class _LoginScreenState extends State<LoginScreen> {
                     children: [
                       Text(
                         "You don't have an account yet?",
-                        style: CustomTextStyle.normalBluecustom(
+                        style: app_utils.CustomTextStyle.normalBluecustom(
                           fontSize: ScreenSizeConfig.fontSize,
-                          color: AppColors.TxtblueColor,
-                          fontFamily: TextFont.PoppinsMedium,
+                          color: app_utils.AppColors.TxtblueColor,
+                          fontFamily: app_utils.TextFont.PoppinsMedium,
                         ),
                       ),
                       SizedBox(width: 5),
@@ -253,10 +261,10 @@ class _LoginScreenState extends State<LoginScreen> {
                             }),
                         child: Text(
                           "Sign up",
-                          style: CustomTextStyle.normalBluecustom(
+                          style: app_utils.CustomTextStyle.normalBluecustom(
                             fontSize: ScreenSizeConfig.fontSize,
-                            color: AppColors.TxtOrangeColor,
-                            fontFamily: TextFont.PoppinsMedium,
+                            color: app_utils.AppColors.TxtOrangeColor,
+                            fontFamily: app_utils.TextFont.PoppinsMedium,
                             decoration: TextDecoration.underline,
                           ),
                         ),
@@ -293,33 +301,28 @@ class _LoginScreenState extends State<LoginScreen> {
               mainAxisSize: MainAxisSize.min,
               children: [
                 SizedBox(height: AppDimensions.getScreenHeight(context) * 0.02),
-                // Image.asset(
-                //   Assets.loginPopupimg,
-                //   fit: BoxFit.contain,
-                //   height: 100,
-                // ),
                 Stack(
                   alignment: Alignment.center,
                   children: [
-                    // Outer semi-transparent white circle
                     Container(
                       width: 100,
                       height: 100,
                       decoration: BoxDecoration(
-                        color: AppColors.TxtOrangeColor.withOpacity(0.1),
+                        color: app_utils.AppColors.TxtOrangeColor.withOpacity(
+                          0.1,
+                        ),
                         shape: BoxShape.circle,
                       ),
                     ),
-                    // Inner solid orange circle
                     Container(
                       width: 60,
                       height: 60,
                       decoration: BoxDecoration(
-                        color: AppColors.TxtOrangeColor,
+                        color: app_utils.AppColors.TxtOrangeColor,
                         shape: BoxShape.circle,
                       ),
                       child: Icon(
-                        Icons.edit_document, // Use an appropriate icon here
+                        Icons.edit_document,
                         color: Colors.white,
                         size: 30,
                       ),
@@ -330,10 +333,10 @@ class _LoginScreenState extends State<LoginScreen> {
                 Text(
                   "How To Signup Employee Or Employer (Company)",
                   textAlign: TextAlign.center,
-                  style: CustomTextStyle.normalBluecustom(
+                  style: app_utils.CustomTextStyle.normalBluecustom(
                     fontSize: ScreenSizeConfig.fontSize,
-                    color: AppColors.blackColor,
-                    fontFamily: TextFont.PoppinsSemiBold,
+                    color: app_utils.AppColors.blackColor,
+                    fontFamily: app_utils.TextFont.PoppinsSemiBold,
                   ),
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,
@@ -342,10 +345,10 @@ class _LoginScreenState extends State<LoginScreen> {
                 Text(
                   "Sign up to find your dream job or hire top talent! Whether you're a job seeker or an employer.",
                   textAlign: TextAlign.center,
-                  style: CustomTextStyle.normalBluecustom(
+                  style: app_utils.CustomTextStyle.normalBluecustom(
                     fontSize: ScreenSizeConfig.fontSize - 1,
                     color: Color(0xff878787),
-                    fontFamily: TextFont.PoppinsRegular,
+                    fontFamily: app_utils.TextFont.PoppinsRegular,
                   ),
                   maxLines: 3,
                   overflow: TextOverflow.ellipsis,
@@ -377,19 +380,20 @@ class _LoginScreenState extends State<LoginScreen> {
                             alignment: Alignment.center,
                             height: 45,
                             decoration: BoxDecoration(
-                              color: AppColors.TxtblueColor.withOpacity(0.1),
+                              color: app_utils.AppColors.TxtblueColor
+                                  .withOpacity(0.1),
                               borderRadius: BorderRadius.circular(6),
                               border: Border.all(
-                                color: AppColors.TxtblueColor,
+                                color: app_utils.AppColors.TxtblueColor,
                                 width: 1,
                               ),
                             ),
                             child: Text(
                               "Employee",
-                              style: CustomTextStyle.customStyle(
+                              style: app_utils.CustomTextStyle.customStyle(
                                 fontSize: ScreenSizeConfig.fontSize,
-                                color: AppColors.TxtblueColor,
-                                fontFamily: TextFont.PoppinsMedium,
+                                color: app_utils.AppColors.TxtblueColor,
+                                fontFamily: app_utils.TextFont.PoppinsMedium,
                               ),
                               textAlign: TextAlign.start,
                             ),
@@ -406,7 +410,8 @@ class _LoginScreenState extends State<LoginScreen> {
                                   context,
                                   MaterialPageRoute(
                                     builder:
-                                        (context) => RegisterCompanyScreen(),
+                                        (context) =>
+                                            company_screen.CompanyRegistrationScreen(),
                                   ),
                                 );
                               }),
@@ -414,19 +419,20 @@ class _LoginScreenState extends State<LoginScreen> {
                             alignment: Alignment.center,
                             height: 45,
                             decoration: BoxDecoration(
-                              color: AppColors.TxtOrangeColor.withOpacity(0.1),
+                              color: app_utils.AppColors.TxtOrangeColor
+                                  .withOpacity(0.1),
                               borderRadius: BorderRadius.circular(6),
                               border: Border.all(
-                                color: AppColors.TxtOrangeColor,
+                                color: app_utils.AppColors.TxtOrangeColor,
                                 width: 1,
                               ),
                             ),
                             child: Text(
                               "Company",
-                              style: CustomTextStyle.customStyle(
+                              style: app_utils.CustomTextStyle.customStyle(
                                 fontSize: ScreenSizeConfig.fontSize,
-                                color: AppColors.TxtOrangeColor,
-                                fontFamily: TextFont.PoppinsMedium,
+                                color: app_utils.AppColors.TxtOrangeColor,
+                                fontFamily: app_utils.TextFont.PoppinsMedium,
                               ),
                               textAlign: TextAlign.start,
                             ),

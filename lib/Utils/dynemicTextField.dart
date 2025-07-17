@@ -19,7 +19,8 @@ class dynemicTextField extends StatelessWidget {
   final bool? obscureText;
   final Color? cursorColor;
   final int? maxlenght;
-  final ValueChanged<String>? onChanged; // Added onChanged property
+  final ValueChanged<String>? onChanged;
+  final FocusNode? focusNode;
 
   const dynemicTextField({
     Key? key,
@@ -39,7 +40,8 @@ class dynemicTextField extends StatelessWidget {
     this.inputFormatters,
     this.obscureText,
     this.cursorColor,
-    this.onChanged, // Added to constructor
+    this.onChanged,
+    this.focusNode,
   }) : super(key: key);
 
   @override
@@ -59,7 +61,8 @@ class dynemicTextField extends StatelessWidget {
               validator: validator,
               readOnly: readOnly,
               onTap: onTap,
-              onChanged: onChanged, // Added onChanged to TextFormField
+              onChanged: onChanged,
+              focusNode: focusNode,
               maxLines: maxLines,
               keyboardType: keyboardType,
               maxLength: maxlenght,
